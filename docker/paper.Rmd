@@ -1,0 +1,31 @@
+---
+title: "My Title"
+author: "My name"
+date: today
+---
+
+## Code longevity of the R programming language
+
+Using R 4.2.2 on Ubuntu 22.04, I ran every example contained in the man/ folder of every default R
+packages that get installed alongside R. The list of these packages contains the well-known 
+`{base}` and `{stats}` packages among others.
+
+The graph and table below shows the result; regardless of version, most of the time
+
+```{r}
+tar_read(errors_plot)
+tar_read(errors_table)
+```
+
+Some slight modification had to be made to make certain examples run. The table below shows 
+which modifications where made for which packages. All the modifications consisted in loading
+`{stats}` or `{stats4}` instead of the original packages (like `{modreg}`). This is because
+these packages don't exist in current versions of R, but the functions do; so because these
+functions were moved to another package, the correct, current package had to be loaded for these
+examples to run. The table below shows which packages and which versions of R where impacted.
+
+```{r}
+tar_read(fix_table)
+```
+
+...
