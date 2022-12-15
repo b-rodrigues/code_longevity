@@ -34,4 +34,5 @@ run_base <- function(scripts_df, ver){
 
 }
 
+#run_base(scripts_df, "0")
 run_base(scripts_df, args[1])
