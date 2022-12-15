@@ -7,7 +7,10 @@ This repository contains the required code and assets to produce this graph:
 This graph was made by running examples from standard installations of R version 0.6.0 to 4.2.2 on R version 4.2.2. 
 Successes, warnings, messages and errors were tallied and the proportion of each condition is shown.
 
-To run this code, you need to build and run a Docker container.
+To run this code, you need to build and run a Docker container, but if you want to just have 
+access to the dataset, simple download [this file](https://github.com/b-rodrigues/code_longevity/blob/master/docker/output/objects/base_runs?raw=true). 
+This file contains the raw results that you can analyze. This is an `.rds` file, which can 
+be imported into an R session using `readRDS()`.
 
 To build the image use the following command, inside the `Docker/` folder:
 
