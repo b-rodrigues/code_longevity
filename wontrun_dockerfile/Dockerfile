@@ -118,4 +118,8 @@ RUN aptitude update && \
   unixodbc-dev \
   zlib1g-dev
 
+RUN R -e "install.packages('remotes')"
+
+RUN R -e "remotes::install_github('b-rodrigues/wontrun', ref = 'master')"
+
 CMD ["R"]
