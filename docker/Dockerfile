@@ -2,8 +2,6 @@ FROM brodriguesco/wontrun:r4.2.2
 
 RUN R -e "install.packages(c('remotes', 'reactable', 'targets', 'tarchetypes', 'quarto', 'chronicler', 'ggplot2', 'colorspace', 'forcats'))"
 
-RUN R -e "remotes::install_github('b-rodrigues/wontrun', ref = 'master')"
-
 RUN mkdir /home/project
 
 RUN mkdir /home/project/intermediary_outputs/
